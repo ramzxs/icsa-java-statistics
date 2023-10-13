@@ -7,6 +7,7 @@ public class StatisticsMode {
         System.out.println("STATISTICS - MODE");
 
         int[] numbers = {
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,
             5, 5, 10, 12, 12,
             16, 17, 17, 17, 16,
             16, 15, 15, 15, 15,
@@ -81,7 +82,7 @@ public class StatisticsMode {
             if (tally[i] == 0) {
                 break;
             }
-            System.out.println(i + ". " + uniqueNumbers2[i] + " = " + tally[i]);
+            System.out.println(i+1 + ". " + uniqueNumbers2[i] + " = " + tally[i]);
         }
 
         int highestFreq = 0;
@@ -100,6 +101,7 @@ public class StatisticsMode {
                 nwhf++;
             }
         }
+        /*
         System.out.println("NUMBERS WITH MOST FREQ:");
         int sum = 0;
         int i = 0;
@@ -114,6 +116,16 @@ public class StatisticsMode {
         System.out.println("Sum: " + sum);
         System.out.println("No. of number with HF: " + i);
         System.out.println("MODE: " + (float) sum / i);
+        */
+
+        System.out.println("MODE(S): ");
+        for (int i = 0; i < numbersWithHF.length; i++) {
+            if (numbersWithHF[i] == 0) {
+                break;
+            }
+            System.out.println(numbersWithHF[i]);
+        }
+
     }
 
 }
